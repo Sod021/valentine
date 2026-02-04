@@ -116,7 +116,7 @@
     </div>
     <img src="images/Screenshot 2026-02-04 102058.png" alt="Valentine photo" />
     <h1>Will you be my Valentine?</h1>
-    <p>Click yes to make my heart skip a beat.</p>
+    <p id="subtitle">Click yes to make my heart skip a beat.</p>
     <div class="buttons">
       <button id="yes" class="btn">Yes</button>
       <button id="no" class="btn">No</button>
@@ -125,6 +125,7 @@
   <script>
     const noBtn = document.querySelector('#no');
     const yesBtn = document.querySelector('#yes');
+    const subtitle = document.querySelector('#subtitle');
     let shakeCount = 0;
     let noClickCount = 0;
     const shakeScaleStep = 0.12;
@@ -139,6 +140,7 @@
     noBtn.addEventListener('click', (event) => {
       event.preventDefault();
       noBtn.textContent = 'Try Again';
+      subtitle.textContent = "I'll keep debugging until you say yes 😢";
       noClickCount += 1;
       updateYesScale();
     });
