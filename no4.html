@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Valentine</title>
+<title>No Thanks?</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <style>
   body {
@@ -96,13 +96,7 @@
     z-index: 2;
   }
 
-  #no {
-    background: #16121f;
-    color: #f7c5d6;
-    border: 2px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
-    z-index: 1;
-  }
+   
 </style>
 </head>
 <body>
@@ -114,26 +108,26 @@
       <span style="left:80%; animation-duration: 16s; font-size:1.4rem;">♥</span>
       <span style="left:45%; animation-duration: 13s;">♥</span>
     </div>
-    <img src="images/Screenshot 2026-02-04 102058.png" alt="Valentine photo" />
-    <h1>I could give you chocolates, but I'd rather give you my heart. <br> Will you be my Valentine?</h1>
-    <p>Click yes to make my heart skip a beat.</p>
+    <img src="images/TeAOtUwTSNGgKHvSKU.gif" alt="Valentine photo" />
+    <h1>You left no other choice </h1>
+    <!-- <p>Sometimes the right answer takes a little nudging.</p> -->
     <div class="buttons">
-      <button id="yes" class="btn">Of Course</button>
-      <button id="no" class="btn">No</button>
+      <button id="yes" class="btn">Yes Of Course, I will be your Valentine</button>
+      
     </div>
   </div>
   <script>
     const noBtn = document.querySelector('#no');
     const yesBtn = document.querySelector('#yes');
 
-    noBtn.addEventListener('click', (event) => {
-      event.preventDefault();
-      window.location.href = 'no.html';
-    });
-
     yesBtn.addEventListener('click', (event) => {
       event.preventDefault();
       window.location.href = 'celebration.html';
+    });
+
+    noBtn.addEventListener('click', (event) => {
+      event.preventDefault();
+      window.location.reload();
     });
   </script>
 </body>
